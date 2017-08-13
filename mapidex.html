@@ -9,8 +9,10 @@
      <body>
      <div class= "container">
      <div class="listedloc">
-         <ui data-bind="forEach: locationslist ">
-         <li data-bind="text: "title" click:populateInfowWindow">
+         <div id= input><input type ="search" placeholder= "search place" data-bind:"value:query"></div>
+         <ui data-bind="forEach:markers ">
+         <li >
+             <h2data-bind="text:title"><</h2>
              </li>
          </ui>
          
